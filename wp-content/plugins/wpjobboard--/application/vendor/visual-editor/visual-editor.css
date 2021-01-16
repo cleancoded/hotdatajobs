@@ -1,0 +1,326 @@
+#poststuff {
+    width:900px;
+}
+.wpjb-properties, .wpjb-trash {
+    cursor:pointer;
+}
+.wpjb-no-border {
+    border: 1px dotted transparent !important;
+}
+.postbox:hover .wpjb-toolbox .handlediv {
+    background: none;
+}
+.wpjb-ve-area {
+    min-height:400px; 
+    border-right: 1px dashed #DFDFDF;
+    margin-right: 300px;
+    width:600px;
+    padding-right:9px;
+}
+
+.wpjb-ve-area .ui-input-group,
+.wpjb-ve-area .wpjb-label:hover {
+    cursor: move;
+}
+
+.wpjb-ve-area .ui-input-group {
+    border: 1px dotted transparent;
+}
+.wpjb-ve-area .ui-input-group:hover {
+    border: 1px dotted #DFDFDF;
+}
+.ui-input-group .wpjb-toolbox-item{
+    border: 1px dotted transparent;
+}
+.ui-input-group .wpjb-toolbox-item:hover {
+    border: 1px dotted #DFDFDF;
+}
+
+.postbox .wpjb-toolbox .hndlei {
+    border-top:1px solid #DFDFDF; 
+    border-radius:0;
+}
+.postbox .wpjb-toolbox .hndle {
+    cursor:pointer;
+}
+
+.postbox .wpjb-toolbox-item {
+    padding: 4px 8px 6px;
+    margin-bottom: 1px;
+}
+.inside .wpjb-toolbox-item:hover, .ui-draggable-dragging {
+    box-shadow: 1px 1px 3px #999999;
+    cursor: move;
+}
+.postbox .wpjb-toolbox-item img {
+    margin-right: 10px;
+    vertical-align: top;
+}
+.postbox .wpjb-toolbox-trash h3 {
+    color: #610000;
+}
+
+.wpjb-ve-area .wpjb-group-legend {
+    font-size: 16px;
+    margin-left: 10px;
+}
+.wpjb-ve-area fieldset {
+    border-top: 2px solid silver;
+    padding: 1px;
+}
+.wpjb-ve-area .wpjb-ui-placeholder {
+    font-size: 12px;
+    text-align: center;
+    font-style: italic;
+    height:20px;
+}
+
+.wpjb-ve-area .wpjb-ui-list .wpjb-toolbox-item > div {
+    clear: both;
+    margin: 5px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.wpjb-ve-area .wpjb-label {
+    display: block;
+    float: left;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 4px 0px 2px 0px;
+    width: 30%;
+}
+
+.wpjb-ve-area .wpjb-field {
+    clear: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+.wpjb-ve-area .wpjb-required {
+    color: red;
+    font-weight: bold;
+}
+
+.wpjb-ve-area .wpjb-inline-input {
+    border: 1px dashed #DADADA;
+}
+
+.wpjb-ve-area .wpjb-element-actions {
+    float: right;
+    margin-top: 4px;
+    visibility:hidden;
+}
+.wpjb-ve-area .wpjb-group-actions {
+    background-color: #f1f1f1;
+    float: right;
+    margin: -17px 10px 0px 2px;
+    position: relative;
+    visibility: hidden;
+    
+}
+
+.wpjb-ve-area .wpjb-label-description {
+    margin: 4px 0px 2px 0px;
+}
+
+.wpjb-ve-area .multi {
+    display: block;
+    font-size: 10px;
+    color: gray;
+}
+
+.wpjb-ve-area .wpjb-ui-list .wpjb-toolbox-item:hover .wpjb-element-actions,
+.wpjb-ve-area .ui-input-group:hover .wpjb-group-actions {
+    visibility:visible;
+}
+
+.ve-group-disabled {
+    line-height: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: gray;
+    background-color: whitesmoke;
+    margin: 5px 0px 5px 0px;
+}
+
+#TB_ajaxContent {
+    background-color: whitesmoke;
+}
+
+#TB_window ul.wpjb-tabs li a {
+    color: #21759B;
+}
+
+#TB_window ul.wpjb-tabs li a:hover {
+    color: #D54E21;
+}
+
+#TB_window ul.wpjb-tabs li.active a {
+    color: #333;
+}
+
+ul.wpjb-tabs {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 3px;
+}
+
+.wpjb-tabs-div ul {
+    list-style: none;
+}
+
+.wpjb-tabs li {
+    display: inline;
+}
+
+ul.wpjb-tabs li.active {
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+}
+
+ul.wpjb-tabs li {
+    padding: 5px;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -khtml-border-top-left-radius: 3px;
+    -khtml-border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.wpjb-tabs a {
+    text-decoration: none;
+}
+
+.wpjb-tabs-div div.wpseo-tabs-panel {
+    overflow: auto;
+    padding: 0.5em 0.9em;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.wpjb-tab {
+    overflow: auto;
+    padding: 0.5em 0.9em;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 13px;
+    color: #333;
+    margin-top: -1px;
+}
+
+
+
+ul.wpjb-tabs li.active {
+    background-color: #F1F1F1;
+}
+
+ul.wpjb-tabs li.active, div.wpjb-tab {
+    border-color: #DFDFDF;
+    background-color: #FFF;
+}
+
+.wpjb-tabs .active a {
+    color: #333;
+}
+
+.ui-widget-content .ui-state-hover {
+    border: 1px solid #DFDFDF;
+    background: #F1F1F1;
+    color: #333;
+}
+
+#TB_ajaxContent {
+    min-height:350px;
+}
+
+#TB_window table {
+    border-collapse: collapse;
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+
+#TB_window div td {
+    border: 1px solid #DFDFDF;
+    width:50%;
+    padding: 2px 8px 2px;
+}
+
+#TB_window div tr td:first-child {
+    vertical-align: top;
+}
+
+#TB_window small {
+    display: block;
+    color: gray;
+    font-size: 10px;
+}
+
+.ui-input-textarea .wpjb-field textarea {
+    width:25em; 
+}
+
+.ve-none,
+.wpjb-none {
+    display:none !important;
+}
+
+.ve-hidden {
+    visibility: hidden !important;
+}
+
+.wpjb-hint {
+    display: block;
+    font-style: italic;
+    margin: 0px 0px 0px 5px;
+}
+
+.ve-validator-list li:hover {
+    border: 1px solid #DFDFDF;
+    background: whitesmoke;
+    border-radius: 4px;
+}
+
+.ve-event-delete {
+    float: right;
+    cursor: pointer;
+}
+
+.ve-loader {
+    visibility: hidden;
+    vertical-align: middle;
+}
+
+.ve-loader.ve-show {
+    visibility: visible;
+}
+
+#ve-save-failed {
+    display: none;
+    margin: 5px 0 0 0;
+    background-color: #FFEBE8;
+    border-color: #CC0000;
+    padding: 0.6em 0.6em;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#ve-save-success {
+    display: none;
+    margin: 5px 0 0 0;
+    background-color: #FFFBCC;
+    border-color: #E6DB55;
+    padding: 0.6em 0.6em;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    cursor: pointer;
+}

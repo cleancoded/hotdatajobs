@@ -1,0 +1,95 @@
+.entry-content label.wpjb-am-box-method,
+label.wpjb-am-box-method {
+    background-color: #fcfcfc;
+    color: #444;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    float: left;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+a.wpjb-am-method,
+a.wpjb-am-method:visited,
+.entry-content a.wpjb-am-method:visited {
+    color: #444;
+    outline: none;
+    display: inline-block;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: padding 500ms;
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+.entry-content a.wpjb-am-method:before,
+a.wpjb-am-method:before {
+    color: #444;
+}
+
+div.wpjb-am-methods-box {
+    padding: 0px;
+}
+
+div.wpjb-am-box-config {
+    padding-top: 10px;
+    display: none;
+    clear: both;
+    font-size: 14px;
+    padding-left: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+div.wpjb-am-box-config small {
+    margin-left: .2em;
+    margin-bottom: .4em;
+    color: #888;
+}
+div.wpjb-am-box-config input[type=text].wpjb-am-email-mock {
+    margin-bottom: 10px;
+}
+
+.wpjb-am-chbox {
+    position: absolute;
+    z-index: -1;
+    
+}
+
+div.wpjb-am-chbox-label {
+    width: 20px;
+    height: 20px;
+    background-color: #e6e6e6;
+    float: left;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 0;
+}
+
+label.wpjb-am-box-method:hover div.wpjb-am-chbox-label {
+    background-color: #ccc;
+}
+
+.entry-content label.wpjb-am-box-method.wpjb-am-active div.wpjb-am-chbox-label,
+label.wpjb-am-box-method.wpjb-am-active div.wpjb-am-chbox-label {
+    background-color: #2aa1c0;
+    color: #fff;
+    position: relative;
+    
+}
+
+.entry-content label.wpjb-am-box-method.wpjb-am-active div.wpjb-am-chbox-label:after,
+label.wpjb-am-box-method.wpjb-am-active div.wpjb-am-chbox-label:after {
+    left: 3px;
+    position: absolute;
+    font-family: "wpjb-glyphs";
+    content: '\e813';
+    z-index: 2;
+    height: 5px;
+    font-size: 14px;
+    line-height: 20px;
+}

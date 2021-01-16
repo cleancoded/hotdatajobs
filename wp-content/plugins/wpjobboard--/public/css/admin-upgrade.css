@@ -1,0 +1,30 @@
+
+div.wpjb-upgrade-error {
+    background-color: #ffebe8 !important;
+    border-color: #f56e28;
+    
+        padding: 12px 6px;
+    overflow: hidden;
+    clear: both;
+}
+
+.wpjb-upgrade-button-icon:before {
+    font-size: 20px;
+    line-height:26px;
+}
+
+div.wpjb-upgrade-error > p:before {
+    vertical-align: middle !important;
+}
+
+.wpjb-update-error .wpjb-upgrade-lock-icon.dashicons {
+    line-height: 28px; 
+    color: #f56e28; 
+    font-size:28px
+}
+
+.wpjb-update-error .wpjb-upgrade-lock-text {
+    line-height: 28px; 
+    margin:0 6px 0 12px; 
+    color: #32373c
+}

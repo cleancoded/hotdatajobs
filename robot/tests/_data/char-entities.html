@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="UTF-8"> 
+    <title>Monsanto condamné à payer 81 millions de dollars à un malade du cancer</title>
+    <!-- adapted from https://www.lemonde.fr/planete/article/2019/03/27/proces-roundup-monsanto-condamne-a-payer-pres-de-81-millions-de-dollars_5442344_3244.html and https://cmake.org/cmake-tutorial/ -->
+  </head>
+<body>
+
+<div id="content">
+<!-- French from lemonde.fr -->
+<p>C’était le procès à ne pas perdre ; Monsanto l’a perdu. Un tribunal fédéral américain de San Francisco (Californie) a condamné, mercredi 27&nbsp;mars, la firme à verser 80,8 millions de dollars (71,8&nbsp;millions d’euros) à un malade touché par un lymphome non hodgkinien. Le plaignant, Edwin Hardeman, a utilisé à titre privé un herbicide à base de glyphosate pendant près de trois décennies et a contracté ce cancer rare de la lymphe en 2015. Bayer, <a href="https://www.lemonde.fr/economie/article/2018/11/02/bayer-dans-l-enfer-du-mariage-avec-monsanto_5377800_3234.html">qui a racheté Monsanto en 2018,</a> a annoncé faire appel du jugement.</p>
+<!-- Code and char entities from cmake.org -->
+<h2>A Basic Starting Point (Step1)</h2>
+<p>The most basic project is an executable built from source code files. For simple projects a two line CMakeLists.txt file is all that is required. This will be the starting point for our tutorial. The CMakeLists.txt file looks like:</p>
+<div class="textboxstyle">
+<pre>cmake_minimum_required (VERSION 2.6)
+project (Tutorial)
+add_executable(Tutorial tutorial.cxx)</pre>
+</div>
+<p>&nbsp;</p>
+<p>Note that this example uses lower case commands in the CMakeLists.txt file. Upper, lower, and mixed case commands are supported by CMake. The source code for tutorial.cxx will compute the square root of a number and the first version of it is very simple, as follows:</p>
+<div class="textboxstyle">
+<pre>// A simple program that computes the square root of a number
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;math.h&gt;
+int main (int argc, char *argv[])
+{
+  if (argc &lt; 2)
+    {
+    fprintf(stdout,"Usage: %s number\n",argv[0]);
+    return 1;
+    }
+  double inputValue = atof(argv[1]);
+  double outputValue = sqrt(inputValue);
+  fprintf(stdout,"The square root of %g is %g\n",
+          inputValue, outputValue);
+  return 0;
+}
+</pre>
+</div>
+</div>
+</body></html>

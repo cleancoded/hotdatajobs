@@ -1,0 +1,2 @@
+INSERT INTO `{$wpdb->prefix}wpjb_mail` (`id`, `name`, `is_active`, `sent_to`, `format`, `mail_title`, `mail_body_text`, `mail_body_html`, `mail_from`, `mail_from_name`, `mail_bcc`) VALUES
+(NULL, 'notify_account_approved', 1, 4, 'text/plain', 'Your account has been approved.', 'Hello!\r\n\r\nThis is an automated email from the WordPress JobBoard Support team. We just wanted to let you know that your account has been approved and you can now login\r\n\r\n{$login_url}\r\n\r\nBest regards,\r\nJob Board Support', '', 'test@example.com', 'Admin', ''); --

@@ -1,0 +1,4 @@
+INSERT INTO  `{$wpdb->prefix}wpjb_meta` (`id`, `name` , `meta_object`, `meta_type`, `meta_value`) VALUES (NULL ,  'company_logo',  'job',  '1',  ''); --
+INSERT INTO  `{$wpdb->prefix}wpjb_meta` (`id`, `name` , `meta_object`, `meta_type`, `meta_value`) VALUES (NULL ,  'file',  'apply',  '1',  ''); --
+INSERT INTO  `{$wpdb->prefix}wpjb_meta` (`id`, `name` , `meta_object`, `meta_type`, `meta_value`) VALUES (NULL ,  'image',  'resume',  '1',  ''); --
+INSERT INTO  `{$wpdb->prefix}wpjb_meta` (`id`, `name` , `meta_object`, `meta_type`, `meta_value`) VALUES (NULL ,  'company_logo',  'company',  '1',  ''); --

@@ -1,0 +1,27 @@
+.add-new-h2 {
+    /*visibility: hidden;*/
+}
+
+label[for='slugdiv-hide'] {
+    display: none;
+}
+
+#titlediv,
+.edit-slug,
+.misc-pub-post-status,
+.misc-pub-visibility,
+.misc-pub-curtime,
+#delete-action,
+#preview-action {
+    display: none !important;
+}
+
+#edit-slug-box {
+    padding: 0px 0px 1.5em; 
+    font-size: 1.1em; 
+    visibility: visible;
+}
+
+#post-body-content {
+    margin-bottom: 0;
+}

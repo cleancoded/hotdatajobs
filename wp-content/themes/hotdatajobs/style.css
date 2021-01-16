@@ -1,0 +1,2158 @@
+/*!
+Theme Name: hotdatajobs
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0F
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: hotdatajobs
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+hotdatajobs is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+	 ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+	margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+	box-sizing: content-box; /* 1 */
+	height: 0; /* 1 */
+	overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+	background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+	border-bottom: none; /* 1 */
+	text-decoration: underline; /* 2 */
+	text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+	border-style: none;
+}
+
+/* Forms
+	 ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+	text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+
+legend {
+	box-sizing: border-box; /* 1 */
+	color: inherit; /* 2 */
+	display: table; /* 1 */
+	max-width: 100%; /* 1 */
+	padding: 0; /* 3 */
+	white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/* Interactive
+	 ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+	display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+	display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: #404040;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+h1, h2, h3, h4, h5, h6, a{
+	font-family:'Roboto', sans-serif;
+}
+
+p {
+	margin-bottom: 1.5em;
+	font-family: 'PT Sans', sans-serif;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff;
+	/* Fallback for when there is no custom background color defined. */
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul, ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0;
+	/* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: #ccc #ccc #bbb;
+	border-radius: 3px;
+	background: #e6e6e6;
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1;
+	padding: .6em 1em .4em;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	border-color: #ccc #bbb #aaa;
+}
+
+button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+	border-color: #aaa #bbb #bbb;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: #111;
+}
+
+select {
+	border: 1px solid #ccc;
+}
+
+textarea {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+	color: royalblue;
+}
+
+a:visited {
+/* 	color: purple; */
+}
+
+a:hover, a:focus, a:active {
+	color: midnightblue;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover, a:active {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 100%;
+	left: -999em;
+	z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	left: 100%;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+}
+
+.main-navigation li {
+	float: left;
+	position: relative;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.site-main{
+	background-color:#FFF;
+	border:1px solid #CCC;
+}
+.wpjb-grid .wpjb-grid-row{
+	border-bottom:2px solid #EEE!important;
+	padding:0.95rem 10px!important;
+}
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.top-bar, .top-bar ul{
+	background-color:#FFF!important;
+}
+.top-bar .nav-btn{
+	padding:3px;
+	color:#FFF;
+	text-decoration:none;
+	min-width:150px;
+	border-radius:5px;
+	margin-left:20px;
+}
+.top-bar li > a{
+	padding-top:20px;
+	padding-bottom:20px;
+	min-width:100px;
+	font-size:1.1rem;
+	color:#333;
+}
+.top-bar .nav-btn > a{
+	color:#FFF;
+	background-color:#429a8a;
+	text-align:center;
+	font-weight:700;
+	padding:12px 20px;
+	border-radius:5px;
+}
+.home-hero-section h2{
+	font-size:2rem!important;
+	margin-top:20px!important;
+	z-index:100;
+	position:relative;	
+}
+.home-hero-section .button{	
+	z-index:100!important;
+	position:relative!important;
+	padding:14PX!important;
+	border:none!important;
+}
+.widget.widget_media_gallery{
+	background-color:#FFF;
+	border:1px solid #CCC;
+	padding:20px;
+}
+.widget.widget_media_gallery h2{
+	font-size:1rem!important;
+	font-weight:normal!important;
+	margin-bottom:20px;
+	text-transform:capitalize;
+}
+.job .entry-content{
+	margin-top:0!important;
+}
+.single-job .navigation.post-navigation{
+	display:none!important;
+}
+.wpjb-top-header{
+    padding: 14px!important;
+    border-bottom: 1px solid #CCC!important;
+    background: #FFF!important;
+}
+.wpjb .wpjb-top-header-image{
+	border:1px solid #EEE;
+	padding:5px!important;
+}
+.wpjb .wpjb-top-header-image,
+.wpjb .wpjb-top-header-image > img{
+	max-width:100%!important;
+	max-height:100%!important;
+	width:100px!important;
+	height:100px!important;
+}
+.wpjb .wpjb-top-header{
+	margin-bottom:0!important;
+	border:1px solid #CCC;
+	border-bottom:none!important;
+}
+.wpjb-top-header-content{
+	width:calc( 100% - 270px )!important;
+	padding:0 20px!important;
+}
+.common_sidebar section{
+	margin:50px 0;
+}
+.sidebar-left, .sidebar-right{
+	max-width:90%;
+}
+.filters_sidebar{
+	background-color:#FFF;
+	border:1px solid #CCC;
+	margin-bottom:25px;	
+	box-sizing:border-box;
+	padding:15px;
+}
+.sidebar-right .widget_mc4wp_form_widget{
+    background: #133040;
+    padding: 35px 20px;
+    color: #FFF;
+}
+.page_section{
+	width: calc( 100% - 350px );
+	float:left;
+	display:block;
+}
+.single .sidebar_section{
+	display:block;
+	float:left;
+}
+.widget_mc4wp_form_widget input[type="submit"]{
+	margin:0!important;
+}
+.widget-title{
+	font-weight:700;
+}
+input{
+	border-radius:0!important;
+}
+.expand{
+	min-width:100%!important;
+}
+.sidebar-right{
+	margin-left:auto;
+	display:block;
+}
+#content{
+	background-color:#F4F4F4;
+}
+.home .content-area{
+	margin-bottom:0!important;
+	margin-top:0!important;
+} 
+.content-area{
+	margin-top:50px!important;
+	margin-bottom:50px!important;
+}
+.sidebar-right h2{
+	font-size:1rem!important;
+}
+.sidebar-left h2{
+	font-size:1.2rem!important;
+}
+.filters_sidebar .button{
+	background-color:#FFF!important;
+/* 	border:none!important; */
+	color:#555!important;
+/* 	border-bottom:1px solid #555!important; */
+	margin:0!important;
+	text-align:unset!important;
+}
+#wpjb-job-categories-2 .button{
+	border-bottom:1px solid #CCC;
+}
+.filters_sidebar .button>i{
+	float:right;
+}
+.filters_sidebar .widget{
+	margin:0!important;
+}
+.filters_sidebar ul{
+	list-style:none;
+	display:inline-block;
+	padding-left:0;
+	margin-left:0;
+	width:100%;
+}
+.filters_sidebar .filter{
+	display:none;
+}
+.filters_sidebar ul li {
+	display:inline-block;
+	margin:0!important;
+	width:auto;
+	padding:8px 5px;
+}
+.filters_sidebar ul li a{
+	background:#ECEDF1;
+	padding:5px;
+	display:inline-block;
+	text-align:center;
+	font-size:12px;
+	color:#555;
+}
+.home-hero-section{
+	background-color:#133040;
+	color:#FFF;
+	padding:50px;
+	text-align:center;
+}
+.home-hero-section h2{
+	margin-bottom:25px!important
+}
+.button{
+	min-width:150px;
+	font-size:1.1rem!important;
+	margin:0 10px!important;
+}
+.wpjb-job-apply .wpjb-button
+{
+	min-width:100%!important;
+	font-size:1.5rem!important;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF!important;
+}
+.wpjb .wpjb-job-apply .wpjb-job-buttons a.wpjb-button{
+	margin:10px 0!important;
+}
+.wpjb .wpjb-job-apply a.wpjb-button:hover,
+.wpjb .wpjb-job-apply a.wpjb-button:focus,
+.wpjb .wpjb-job-apply a.wpjb-button, 
+.wpjb .wpjb-job-apply .wpjb-upload-actions a.button{
+	color:#FFF!important;
+}
+.wpjb-job-apply .wpjb-button,
+.button-darkteal, .wpjb-submit,
+.wpjb.wpjb-page-preview a.wpjb-button,
+.wpjb .wpjb-enter-discount-apply.wpjb-button,
+.wpjb .wpjb-button.wpjb-place-order,
+div.wpjb-single-membership div.wpjb-membership-actions a.wpjb-button{
+	background-color:#439a8a!important;
+	color:#FFF!important;
+	border:none!important;
+	padding:14px!important;
+	border-radius:0!important;
+	cursor:pointer;
+}
+.wpjb-enter-discount-value{
+    width: auto!important;
+    display: inline-block!important;
+    height: 42px!important;
+
+}
+.wpjb.wpjb-page-preview a.wpjb-button:visited, .wpjb.wpjb-page-preview .wpjb-upload-actions a.button:visited, .wpjb.wpjb-page-preview a.wpjb-button:hover, .wpjb.wpjb-page-preview .wpjb-upload-actions a.button:hover,
+.wpjb-enter-discount-apply.wpjb-button:visited,
+.wpjb-button.wpjb-place-order:visited,
+.wpjb-enter-discount-apply.wpjb-button:hover,
+.wpjb-button.wpjb-place-order:hover{
+	color:#FFF!important;
+}
+.button-white{
+	background-color:#FFF!important;
+	color:#333!important;
+	border:1px solid #333!important;
+}
+.button-small{
+	padding:8px!important;
+	min-width:100px!important;
+	margin-top:10px!important;
+	display:inline-block;
+	margin-left:0!important;
+}
+.button-white:hover,
+.button-white:focus{
+	background-color:#439a8a!important;
+	color:#FFF!important;;
+	border-color:#439a8a!important;
+}
+.button-default{
+	background-color:#F8F8F8!important;
+	color:#333!important;
+}
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+.site-footer {
+	background-color:#133040;
+	clear:both;
+	display:inline-block;
+	width:100%;
+	border-top:5px solid #479889;
+	padding:50px 0;
+	color:#FFF;
+}
+.site-header{
+	padding:10px 0!important;
+	border-bottom:7px solid #133040;
+}
+.page-id-11.logged-in .site-main{
+	max-width:100%!important;
+}
+.employer_signin .site-main,
+.page-id-11 .site-main{
+	max-width:400px;
+	margin:auto;
+	padding:0 5px;
+}
+.page-id-11.logged-in .content-area{
+    padding: 10px;
+    max-width: 85rem;
+    margin: 50px auto!important;
+}
+.employer_signin .input-group-label{
+	background-color:#FFF!important;
+	border-right:none!important;
+}
+.employer_signin .input-group-field{
+	box-shadow:none!important;
+	border-left:none!important;
+}
+.employer_signin button, .wpjb-submit.button{
+	margin-left:0!important;
+}
+.employer_signin .input-group-field:focus .input-group-label{
+	border-color:#333!important;
+}
+.wpjb-element-name-company_info .wpjb-label, 
+.wpjb-element-name-company_info .wpjb-field{
+	min-width:100%!important;
+}
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+	/* Make sure select elements fit in widgets. */
+}
+
+.widget select {
+	max-width: 100%;
+}
+.site-footer .site-info > a{
+	color:#EEE;
+}
+.footer-widgets ul > li.menu-item > a{
+	color:#EEE;
+	padding:0;
+	line-height:28px;
+}
+.footer-widgets h3{
+	font-size:1.2rem!important;
+}
+.footer-widgets .social-links a{
+    background: #44968a;
+    color: #FFF;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    line-height: 1.7;
+    text-align: center;
+    font-size:  1.82rem;
+	margin-right:10px;
+}
+.footer-widgets ul > li{
+	display:block;
+	min-width:100%;
+}
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	/* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+.button-view-job{	
+    padding: 10px;
+    font-size: 14px!important;
+    width: auto;
+    display: inline-block;
+    min-width: 10px;
+    margin-left: 0!important;
+	margin-right:0!important;
+    background: #FFF!important;
+    color: #333!important;
+    border: 1px solid #CCC!important;
+    border-radius: 3px;
+    margin-top: 10px!important;
+}
+.wpjb .wpjb-line-minor{
+	margin-bottom:10px!important;
+}
+.home .entry-header{
+	display:none!important;
+}
+.vertical-centered{
+	margin:auto!important;
+	vertical-align:middle;
+}
+body .wpjb .wpjb-line-minor .wpjb-sub{
+	padding:0!important;
+}
+.wpjb .wpjb-grid .wpjb-col-main{
+	min-width:100%!important;
+}
+.single-job .entry-header{
+		display:none;
+}
+.wpjb-text-box, .wpjb-job-apply{
+	padding:0 25px!important;
+}
+.input-error{
+	border:2px solid #439a8a!important;
+}
+.wpjb-flash-error.login-errors,
+#user_login_error, #user_password_error{
+	display:none;
+	list-style:circle;
+	width:100%;
+	float:left;
+}
+#user_login_error li, #user_password_error li{
+	color:#439a8a;
+}
+.ad-banner{
+	margin:35px 0;
+}
+.page-id-12 .wpjb-form-actions legend{
+	display:none;
+}
+.page-id-12 .site-main{
+/* 	max-width:50%!important; */
+	padding:0 5px;
+}
+.entry-title{
+	padding:25px;
+/* 	padding-top:25px; */
+}
+.entry-title,
+.page-id-12 .entry-title,
+.page-id-11 .entry-title{
+	text-align:left;
+	font-size:1.5rem;
+/* 	margin-bottom:25px; */
+}
+.wpjb .wpjb-form div label.wpjb-label{
+	font-weight:400!important;
+	font-size:0.875rem!important;
+	color:#0a0a0a!important;
+}
+.wp-core-ui .quicktags-toolbar input.button.button-small{
+	font-size:12px!important;
+	height:auto!important;
+	line-height:inherit!important;
+	padding:5px!important;
+	min-width:10px!important;
+}
+.wpjb .wpjb-form div label.wpjb-field, 
+.wpjb .wpjb-form div input, 
+.wpjb .wpjb-form div textarea,
+.wpjb .wpjb-form div select{
+	font-size:1rem!important;
+/* 	color:#666!important; */
+}
+.page-id-12 .entry-title{
+	margin-top:25px;
+/* 	display:none; */
+	padding-left:25px;
+}
+.wpjb-submit{
+	min-width:100%;
+	padding:14px!important;
+	margin-bottom:10px;
+}
+.wpjob-element-input-checkbox{
+	display:flex;
+}
+.wpjb .wpjb-form > fieldset > div{
+	margin-top:0!important;
+	margin-bottom:0!important;
+}
+.wpjb-element-name-remember .wpjb-field{
+	min-width:20px!important;
+	width:20px!important;
+	margin-top:5px!important;
+	display:inline-block;
+}
+.wpjb-element-name-remember .wpjb-label{
+/* 	min-width:100px!important; */
+	display:inline-block;
+}
+.employer_signin .wpjb-label, 
+.employer_signin .wpjb-field{
+	min-width:100%!important;
+}
+.wpjb-apply-now-btn-top{
+	width:170px;
+	float:right;
+	margin-top:30px!important;
+}
+.employer-reg-banner{
+	background-position: top;
+	height: calc(100% - 100px);
+	overflow: hidden;
+	position: relative;
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin: 50px 10px;
+}
+.employer-reg-banner h3{
+	position:absolute;
+	display:none;
+	padding:35px;
+	bottom:100px;
+	background-color:#429a8a;
+	color:#FFF;
+}
+#wpjb-top-search{
+	border-bottom:1px solid #CCC!important;
+}
+.wpjb .wpjb-grid .wpjb-col-logo>div{
+	text-align:right!important;
+	width:100%;
+}
+.wpjb-col-logo{
+	max-width:200px;
+	margin-left:auto!important;
+	float:none!important;
+	display:unset!important;
+}
+.page-id-7 .entry-header{
+    text-transform: uppercase;
+    color: #555;
+    text-align: center;
+    padding-top: 25px;
+}
+.wpjb-add-job-steps{
+	background-color:#429a8a!important;
+	color:#FFF!important;
+}
+.wpjb ul.wpjb-add-job-steps>li:last-child{
+	border-right:none!important;
+}
+.wpjb .wpjb-listing-type-x{
+	background-color:#E9E9E9!important;
+}
+.wpjb-form{
+	padding:0 25px!important;
+}
+.wpjb-add-job-steps li{
+	color:#FFF!important;
+}
+.page-id-6 .entry-header{
+	display:none!important;
+}
+.toggle_filters{
+    padding: 10px;
+    text-align: left;
+	font-size:14px;
+}
+.toggle_filters:focus{
+	border:none;
+	outline: none!important;
+}
+.filters_sidebar .widget_text button{
+	display:none!important;
+}
+.filters_sidebar .widget_text .filter{
+	display:block!important;
+}
+.filters_sidebar .widget_text .new_tag{
+	color:#FFF!important;
+	border-radius:2px;
+	padding:4px 8px!important;
+	font-size:12px;
+	font-weight:700;
+}
+.filters_sidebar .widget_text strong{
+	color:#555;
+	font-size:15px!important;
+}
+.toggle_filters > i{
+	font-size:12px;
+	margin-top:-5px;
+	margin-right:4px;
+}
+.button-view-job:hover, .button-view-job:focus{
+	background-color:#439a8a!important;
+	color:#FFF!important;
+	border-color:#439a8a!important;
+}
+.page-content, .entry-content, .entry-summary{
+	margin-top:0!important;
+	margin-bottom:0!important;
+}
+.widget_mc4wp_form_widget .widget-title{
+	margin-bottom:20px!important;
+}
+.widget_mc4wp_form_widget .widget-title > i{
+	font-size:2rem;
+}
+.widget_wpjb-recent-jobs{
+	background-color:#FFF;
+}
+.wpjb-widget-grid-link.wpjb-widget-recent-jobs-all{
+	display:none;
+}
+.widget_wpjb-recent-jobs .widget-title{
+    background: #133040;
+    color: #FFF;
+    padding: 5px 10px;
+    text-align: center;
+}
+.wpjb .wpjb-grid .wpjb-col-logo img{
+		padding:5px!important;
+/* 		border:1px solid #CCC!important; */
+}
+.filters_sidebar ul li a:hover,
+.filters_sidebar ul li a:focus{
+	background-color:#439a8a!important;
+	color:#FFF!important;
+}
+.wpjb-job_title.wpjb-title{
+	color:#777!important;
+	font-size:20px!important;
+}
+.wpjb .wpjb-tag{
+	background-color:#439a8a!important;	
+}
+.job_feed_section .entry-header{
+	display:none!important;
+}
+.page-id-8 .sidebar_section,
+.page-id-6 .sidebar_section{
+	margin-top:50px;
+}
+.page-id-6 .sidebar_section, .page-id-6 .job_feed_section,
+.page-id-8 .sidebar_section, .page-id-8 .job_feed_section{
+	float:left;
+}
+.site-branding a{
+	font-size:1.6rem;
+	text-transform:uppercase;
+}
+.site-branding p{
+	margin-bottom:0!important;
+}
+.error404 .site-main{
+	background-color:unset!important;
+	border:unset!important;
+	padding:50px!important;
+}
+.text404{
+    padding: 20px;
+    background: #FFF;
+    border: 1px solid #CCC;
+
+}
+#homepage_background{
+	z-index:-1;
+	overflow: hidden;
+	width: 100%;
+	background-color: #133040;
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	height:300px;
+}
+#homepage_background canvas{
+	margin-top:-170px;
+	height:300px!important;
+	z-index:-1;
+}
+.wpjb .wpjb-paginate-links a, .wpjb .wpjb-paginate-links span{
+	background-color:#FFF!important;
+	border:1px solid #EEE!important;
+}
+.wpjb-paginate-links{
+	margin:0!important;
+	padding:20px!important;
+	background-color:#f4f4f4!important;
+}
+a.prev.page-numbers,
+.next.page-numbers{
+	border:none!important;
+	background-color:transparent!important;
+}
+.prev.page-numbers span,
+.next.page-numbers span{
+	padding:3px!important;
+}
+a.prev.page-numbers,
+a.next.page-numbers{
+	background-color:transparent!important
+}
+.job_feed_section .entry-footer{
+	display:none;
+}
+.hentry{
+	margin-bottom:0!important;
+}
+.sidebar_mobile .common_sidebar section{
+	margin:25px 0!important;
+}
+.sidebar_mobile{
+	margin-top:0!important;
+}
+.employer_signin .site-main{
+	padding:20px 25px!important;
+}
+.wpjb-label small{
+	min-width:100%;
+	display:inline-block;
+}
+.wpjb .wpjb-form .wpjb-required{
+	color:unset!important;
+	font-weight:unset!important;
+}
+.page-id-11 .wpjb-flash-error, .page-id-11 .wpjb-element-name-remember, .page-id-11 .wpjb-form-actions legend{
+/* 	display:none!important; */
+}
+.right-aligned{
+	text-align:right;
+	display:block;
+}
+.link{
+	color:#555;
+	text-decoration:none;
+}
+.bottom-text{
+	margin:20px auto!important;
+}
+.bottom-text .button{
+	margin-top:0!important;
+	margin-left:10px!important;
+}
+.wpjb .wpjb-form ul.wpjb-errors li{
+	color:#439a8a!important;
+}
+.wpjb .wpjb-form .wpjb-error input,
+.wpjb .wpjb-form .wpjb-error textarea{
+	border:2px solid #439a8a!important;
+}
+div.wpjb-flash-error{
+	background-color:#439a8a!important;
+	border:none!important;
+}
+.wpjb .wpjb-form .wpjb-error{
+	background-color:transparent!important;
+}
+.wpjb .wpjb-top-header-title{
+	margin:0!important;
+	padding:0!important;
+}
+.wpjb .wpjb-top-header-subtitle>li{
+	font-size:1.5rem!important;
+}
+.dot_icon{
+	position:relative;
+	top:0;
+	bottom:0;
+	margin-right: 10px!important;;
+	width:5px;
+	height:5px;
+	display:inline-block;
+	border-radius:50%;
+	background-color:#777;
+	vertical-align:middle;
+}
+.wpjb-job-apply{
+	padding:0!important;
+	margin:0;
+}
+.single-job .site-main{
+	background-color:transparent!important;
+	border:none!important;
+}
+.company_info{
+	padding-bottom:30px!important;
+	margin-bottom:50px!important;
+	border:1px solid #CCC!important;
+}
+.company_info .info_content{
+	padding:30px 30px 0 30px!important;
+}
+.company_info .info_header{
+	border-bottom:1px solid #CCC;
+	padding:20px;
+}
+.company_info .company_details{
+    width: calc( 100% - 150px );
+    display: inline-block;
+    padding: 0 10px;
+	font-size:14px;
+}
+.company_info .company_name{
+	font-size:2rem;
+	color:#555;
+	margin-top:-10px;
+}
+.company_info .info_header span.company_details span{
+	display:inline-block;
+	width:auto;
+}
+.company_info .info_header img{
+    width: 100px;
+    height: 100px;
+	float:left;
+    padding: 5px;
+    border: 1px solid #EEE;
+}
+.company_info, .single-job .wpjb-text-box{
+	background-color:#FFF;
+	padding-bottom:30px!important;
+	border:1px solid #CCC;
+}
+.wpjb-form-job-apply{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0!important;
+/*     margin-bottom: 20px; */
+    background: #559589;
+    font-size: 2rem!important;
+    padding: 14px;
+    color: #FFF!important;
+    text-transform: uppercase;
+}
+.inner_key{
+	width:100px!important;
+	float:left;
+}
+.inner_value{
+	width:auto;
+	float:left;
+}
+/*employers page*/
+.page-id-119 .employer_signin{
+    max-width: 400px;
+    margin-left: auto;
+    background: #FFF;
+    padding: 30px;
+    color: #333;
+}
+.page-id-119 .site-main{
+	background-color:transparent!important;
+	border:none!important;
+}
+.page-id-119 .entry-header{
+	display:none!important;
+}
+.page-id-119 .content-area{
+	margin-top:0!important;
+	margin-bottom:0!important;
+}
+.no-margin{
+	margin-bottom:0!important;
+}
+.stat_col{
+    text-align: center;
+    padding: 50px 10px;
+}
+.stat_col .stat_title{
+    width: 100%;
+    display: inline-block;
+    font-size: 2rem;
+    color: #49708d;
+    font-weight: 700;
+}
+.stat_col.stat_col_last:after{
+	display:none!important;
+}
+.stat_col:after{
+	content:"";
+	position:absolute;
+	right:0;
+	height:75px;
+	top:0;
+	bottom:0;
+	margin:auto;
+	width:2px;
+	background-color:#CCC;
+}
+.wpjb .wpjb-grid .wpjb-col-logo>div.wpjb-icon-none{
+	text-align:right!important;
+	width:auto!important;
+	float:right!important;
+}
+.wpjb .wpjb-motif-bg-dark{
+	background-color:#133040!important;
+}
+.wpjb-page-company-home .wpjb-boxes{
+	max-width:90%!important;
+	margin:auto!important;
+}
+.page-id-11 .entry-title{
+/* 	padding:25px 25px 0 25px!important; */
+}
+.page-id-11 .wpjb .wpjb-boxes .wpjb-boxes-group{
+	border-bottom:none!important;
+}
+.wpjb-button.wpjb-place-order{
+	float:right;
+}
+.wpjb.wpjb-page-company-products h2{
+	font-size:1.5rem;
+	width:auto;
+	display:inline-block;
+	max-width:530px;
+	text-transform:uppercase;
+}
+.wpjb.wpjb-page-company-products h2,
+.page-id-11 .wpjb .wpjb-boxes .wpjb-boxes-group .wpjb-boxes-group-text{
+	border-bottom:5px solid #439a8a;
+	
+}
+.wpjb .wpjb-layer-inside{
+	color:#429a8a!important;
+}
+.wpjb-box-job_applications,
+.wpjb-box-job_history{
+	display:none!important;
+}
+.price-table{
+    border: 2px solid #CCC;
+    border-radius: 10px;
+    padding: 20px 25px;
+}
+.price-table h2,
+.price-table h5,
+.price-table h3,
+.price-table h4{
+	margin-bottom:0!important;
+}
+.price-table h5{
+	font-size: 14px;
+	color: #429a8a;
+}
+.price-table .price-content{
+	color:#999;
+	padding-top:20px;
+}
+.price-table.large{
+	padding:40px 35px!important;
+	border-width:4px;
+}
+.price-table .price-content h4{
+	color:#333;
+}
+/*page style*/
+.standard-page{
+	margin-bottom:50px;
+}
+.standard-page .sidebar_section{
+	float:left;
+}
+.standard-page .sidebar-left{
+	background-color:transparent;
+	padding:5px;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+/* 	border:1px solid #CCC; */
+}
+.standard-page .page_section .site-main{
+	padding:25px!important;
+}
+.standard-page ul.menu > li > a{
+	color:#FFF;
+	padding:14px;
+	font-size:1.2rem;
+	border-bottom:2px solid #EEE;
+}
+.standard-page ul.menu li > a:hover,
+.standard-page ul.menu li > a.active,
+.standard-page ul.menu li > a:focus{
+	background-color:#439a8a!important;
+}
+.standard-page ul.menu{
+	background-color:#133040;
+}
+.label.warning,
+.wpjb-page-search .wpjb-bulb, .wpjb-page-index .wpjb-bulb{
+	background-color:#133040!important;
+}
+.wpjb-am-box-method-email{
+	display:none!important;
+}
+.logo_section{
+    width: 65px;
+    height: 65px;
+    vertical-align: middle;
+    display: inline-block;
+    /* margin: auto; */
+    /* float: left; */
+    margin-top: 10px!important;
+}
+.jobcontent_section{
+	width: calc( 100% - 65px );
+	float:right;
+}
+.company_name{
+	min-width:100%!important;
+	display:inline-block;
+}
+.jobcontent_section a{
+	color:#121212!important;
+}
+.jobcontent_section span{
+	color:#555!important;
+	font-size:14px;
+}
+.contact_form{
+    padding: 35px;
+    background: #FFF;
+    margin: 50px 0;
+}
+.contact_form_info{
+    margin:auto;
+    margin: 50px auto;
+    padding: 20px;
+    background: #FFF;
+	max-width:85%;
+}
+input.ninja-forms-field[type="button"]{
+	min-width:100px;
+	font-size:1.2rem;
+	float:right;
+}
+.nf-form-fields-required{
+	display:none;
+}
+@media(min-width:670px) AND (max-width:1242px)
+{
+	.home-hero-section canvas{
+		margin-top:-230px!important;
+	}
+}
+@media(max-width:669px){
+	.home-hero-section h2{
+		font-size:1.5rem!important;
+	}
+	.contact_form_info{
+		min-width:100%;
+	}
+	.home-hero-section{
+		height:auto!important;
+		padding:50px 20px!important;
+	}
+	.home-hero-section canvas{
+		margin-top:-270px!important;
+	}
+}
+@media(min-width:766px){
+	.wpjb .wpjb-grid .wpjb-col-logo img{
+	width:100px!important;
+	height:100px!important;
+}
+}
+.wpjb .wpjb-place-order-wrap a.wpjb-button:visited, .wpjb .wpjb-place-order-wrap
+ .wpjb-upload-actions a.button:visited, .wpjb .wpjb-place-order-wrap a.wpjb-button:hover, .wpjb .wpjb-place-order-wrap .wpjb-upload-actions a.button:hover{
+	 color:#FFF!important;
+}
+.wpjb-place-order-wrap{
+	padding:0 35px!important;
+}
+.page-id-15 #content{
+	padding:10px;
+}
+.page-id-15 .content-area,
+.grid-container{
+	max-width:85rem!important; 
+	margin:auto;
+}
+.login-error{
+    color: #FFF;
+    background: #438a8a;
+    padding: 10px;
+}
+@media(min-width:767px){
+	.sidebar_section{
+		width:334px;
+	}
+	.job_feed_section{
+		width:calc( 100% - 668px );
+	}
+	.wpjb-logo.show-on-mobile{
+		display:none!important;
+	}
+}
+@media(max-width:766px){
+	.sidebar_section, .job_feed_section, .page_section{
+		width:100%;
+	}
+}
+@media(max-width:870px){
+	.dot_icon{
+		display:none!important;
+	}
+	.wpjb .wpjb-top-header-subtitle>li{
+		font-size:1rem!important;
+	}
+	.wpjb-apply-now-btn-top,
+	.wpjb-apply-now-btn-top .button{
+		min-width:100%!important;
+	}
+	.wpjb-apply-now-btn-top .button{
+		margin-left:0!important;
+	}
+	.company_info .company_name{
+		font-size:1.2rem!important;
+	}
+	.inner_key, .inner_value{
+		width:50%!important;
+	}
+	.wpjb-top-header-content{
+		width:calc( 100% - 100px )!important;
+	}
+	.sidebar-right{
+		margin:auto!important;
+	}
+}
+@media(max-width:400px){
+	.sidebar-left, .sidebar-right{
+		min-width:100%!important;
+	}
+}
+@media(max-width:500px){
+	.custom-logo{
+		max-width:75%;
+	}
+}
+@media(max-width:979px){
+	.wpjb-logo.show-on-mobile{
+		display:block!important;
+		width:50px!important;
+		height:50px!important;
+		float:right;
+	}
+	.home-hero-section .button{
+		margin-bottom:10px!important;
+		z-index:100;
+	}
+	.hidden-on-mobile{
+		display:none!important;
+	}
+}
+@media(min-width:767px){
+	.sidebar_mobile{
+		display:none!important;
+	}
+	.sidebar_desktop{
+		display:block!important;
+	}
+}
+@media(max-width:766px){
+	.sidebar_mobile{
+		display:block!important;
+		margin-top:25px;
+	}
+	.job_feed_section{
+		margin-bottom:25px!important;
+	}
+
+	.sidebar_desktop{
+		display:none!important;
+	}
+	.toggle-menu{
+		display:block;
+		position: absolute;
+		top: 15px;
+		right: 10px;
+		background: #133040!important;
+		color: #FFF!important;
+		padding: 8px!important;
+		min-width: 70px;
+/* 		border: 1px solid #333!important; */
+		font-size: 2rem!important;
+	}
+	nav{
+		display:none!important;
+	}
+	.off-canvas{
+		background-color:#133040!important;
+		color:#fff;
+		padding:50px 10px!important;
+		z-index:100000!important;
+	}
+	.off-canvas li > a{
+		color:#FFF!important;
+		border-bottom:1px solid #EEE;
+	}
+}
+@media(min-width:767px){
+	.toggle-menu{
+		display:none!important;
+	}
+}
+@media(min-width:767px) AND (max-width:1200px){
+	.wpjb-top-header-title h2{
+		font-size:2rem!important;
+	}
+	.wpjb .wpjb-top-header-subtitle>li{
+		font-size:1rem!important;
+	}
+}

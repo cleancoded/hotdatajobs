@@ -1,0 +1,14 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?uploads/wpjobboard/application/(.+) /wp-content/plugins/wpjobboard/restrict.php?url=application/$2 [QSA,L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?uploads/wpjobboard/resume/(.+) /wp-content/plugins/wpjobboard/restrict.php?url=resume/$2 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

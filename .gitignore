@@ -1,0 +1,47 @@
+#no managewp cloner file changes
+
+cloner.php
+
+cloner_error_log
+
+mwp_db/index.php
+
+# no auto-generated thumbnails
+
+.tmb
+
+# no cached files
+
+wp-content/cache
+
+cache
+
+wp-content/nitropack
+
+# no uploads
+
+wp-content/uploads
+
+# no WordFence logs
+
+wp-content/wflogs
+
+# no wp-config.php
+
+wp-config.php
+
+wp-content/wflogs
+
+wflogs
+
+wp-content/backups 
+
+backups
+
+wp-content/upgrade 
+
+upgrade
+
+backup.zip
+
+gitwatch

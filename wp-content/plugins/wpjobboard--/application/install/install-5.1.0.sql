@@ -1,0 +1,4 @@
+INSERT INTO `{$wpdb->prefix}wpjb_meta` (`id`, `name`, `meta_object`, `meta_type`, `meta_value`) VALUES (NULL, 'is_recurring', 'pricing', 1, '') ; --
+INSERT INTO `{$wpdb->prefix}wpjb_meta` (`id`, `name`, `meta_object`, `meta_type`, `meta_value`) VALUES (NULL, 'stripe_id', 'pricing', 1, '') ; --
+INSERT INTO `{$wpdb->prefix}wpjb_meta` (`id`, `name`, `meta_object`, `meta_type`, `meta_value`) VALUES (NULL, 'subscription_id', 'membership', 1, '') ; --
+INSERT INTO `{$wpdb->prefix}wpjb_meta` (`id`, `name`, `meta_object`, `meta_type`, `meta_value`) VALUES (NULL, 'subscription_status', 'membership', 1, '') ; --

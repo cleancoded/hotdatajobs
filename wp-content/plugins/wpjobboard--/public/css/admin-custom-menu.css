@@ -1,0 +1,167 @@
+.wpjb-custom-menu-switch {
+    width: 100%;
+    margin: 1em 0 !important;
+}
+
+.wpjb-custom-menu-switch > .wpjb-icon-down-open {
+    float: right;
+}
+.wpjb-custom-menu-wrap {
+    position: relative;
+}
+.wpjb-custom-menu-items { 
+    display: none; 
+} 
+
+.wpjb-custom-menu-items {
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background-color: #f7f7f7;
+    position: absolute;
+    margin-top: -11px;
+    z-index: 100;
+    width: 360px;
+    max-height: 300px;
+    overflow-y: scroll;
+}          
+.wpjb-custom-menu-items > li {
+      margin: 0;
+}
+.wpjb-custom-menu-items a {
+    display: block;
+    line-height: 28px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+.wpjb-custom-menu-items a:hover {
+    background: #0074a2;
+    color: #fff;
+    text-decoration: none;
+}  
+.wpjb-custom-menu-item-header {
+    border-bottom: 1px solid rgba(0,0,0,.04);
+
+}
+
+.wpjb-custom-menu-item-header > span,
+.wpjb-custom-menu-item-header > strong {
+    padding: 6px 10px 6px 10px;
+    display: inline-block;
+
+}
+
+.wpjb-custom-menu-links .menu-item-bar .menu-item-handle {
+    width: auto;
+}
+
+.wpjb-custom-menu-links .item-edit {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    display: block;
+    width: 30px;
+    height: 40px;
+    margin-right: 0!important;
+    text-align: center;
+    outline: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.wpjb-custom-menu-links .item-edit span:before {
+    vertical-align: middle;
+    margin-top: 8px;
+}
+
+.wpjb-custom-menu-links .description-thin {
+    width: 45%;
+}
+
+.wpjb-custom-menu-links .edit-menu-item-url {
+    width: 330px;
+}
+
+.wpjb-custom-menu-icon-picker-wrap {
+    max-height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    padding: 15px;
+    width: 215px;
+    display: none;
+    background-color:white;
+    z-index: 1000;
+}
+#wpjb-category-icon-filter {
+    width: 98%;
+}
+.wpjb-image-icon-picker > li {
+    display: block;
+    margin: 0 1em 1em 0;
+    padding: 0;
+    height: 30px;
+    width: 35px;
+
+    float: left;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.wpjb-image-icon-picker > li > a {
+    width: 43px;
+}
+
+.wpjb-image-icon-picker > li > a > span {
+    font-size: 16px;
+    line-height: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.wpjb-image-icon-picker > li > a > span:before {
+    padding-top: 6px;
+    vertical-align: top;
+}
+
+.wpjb-image-icon-picker > li > a.button-primary > span:before {
+    color: white;
+}
+
+.wpjb-icon-picker-toggle {
+    width: 100%;
+}
+.wpjb-icon-picker-open {
+    float: right;
+}
+
+.menu-item-bar .wpjb-custom-menu-line-bg {
+    width: 310px;
+}
+
+.menu-item-bar .wpjb-custom-menu-line-bg > span {
+  display: inline-block;
+  padding: 0 10px 0 0;
+  position: relative;
+}
+
+.menu-item-bar .wpjb-custom-menu-line-bg > span:before,
+.menu-item-bar .wpjb-custom-menu-line-bg > span:after {
+  background: #ddd;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+    top: 50%;
+  width: 400%;
+}
+.menu-item-bar .wpjb-custom-menu-line-bg > span:before {
+  right: 100%;
+}
+.menu-item-bar .wpjb-custom-menu-line-bg > span:after {
+  left: 100%;
+}
+.menu-item-bar .wpjb-custom-menu-line-bg {
+  overflow: hidden;
+}

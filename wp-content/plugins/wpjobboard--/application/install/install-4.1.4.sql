@@ -1,0 +1,4 @@
+INSERT INTO `{$wpdb->prefix}wpjb_meta` (`id`, `name`, `meta_object`, `meta_type`, `meta_value`) VALUES (NULL, 'linkedin_profile_url', 'apply', 1, '') ; --
+
+INSERT INTO `{$wpdb->prefix}wpjb_mail` (`id`, `name`, `is_active`, `sent_to`, `format`, `mail_title`, `mail_body_text`, `mail_body_html`, `mail_from`, `mail_from_name`, `mail_bcc`) VALUES
+(NULL, 'notify_admin_general_application', 1, 1, 'text/plain', 'New general application.', 'Hello!\r\n\r\nThis is an automated email from the WordPress JobBoard Support team. We just wanted to let you know that new general application has been submitted. Read the details below:\r\n\r\nApplication ID: {$application.id}\r\nApplicant email address: {$application.email}\r\nApplicant message: \r\n{$application.message}\r\n\r\nBest regards,\r\nJob Board Support', '', 'test@example.com', 'Admin', ''); --
